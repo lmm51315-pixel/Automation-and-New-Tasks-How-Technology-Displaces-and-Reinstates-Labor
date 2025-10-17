@@ -1,0 +1,24 @@
+% !TEX program = xelatex
+% !TEX root = test.tex
+
+\documentclass{article}
+\usepackage{fontspec}
+\usepackage{booktabs}
+\begin{document}
+
+\begin{table}[!htbp]\centering
+\caption{Proxies for automation technologies}
+\setlength{\tabcolsep}{8pt}\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{lccc}
+\toprule
+& Raw data (1) & Controlling for manufacturing (2) & Controlling for Chinese import and offshoring (3)\\
+\midrule
+Adjusted penetration of robots, 1993--2014 & -1.404 & -0.985 & -1.129\\
+& (0.377) & (0.369) & (0.362)\\
+Observations & 61 & 61 & 61\\
+$R^2$ & 0.18 & 0.21 & 0.27\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

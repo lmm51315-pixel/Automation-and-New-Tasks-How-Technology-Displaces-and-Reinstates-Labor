@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{fontspec}   % 英文字体
+\usepackage{xeCJK}      % 中文
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{tabularx}
+\usepackage{array}
+
+% 字体（若报找不到，请把 PingFang SC 改成你系统有的，如 Songti SC / Heiti SC）
+\setmainfont{Times New Roman}
+\setCJKmainfont{PingFang SC}
+
+% 居中可换行的 X 列
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\begin{document}
+
+\begin{table}[!htbp]
+\centering
+\caption{自动化技术的代理指标}
+\label{tab:auto_proxies_cn}
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.15}
+
+\begin{tabularx}{\textwidth}{Y c c c}
+\toprule
+ & \multicolumn{1}{c}{原始数据}
+ & \multicolumn{1}{c}{\makecell[c]{控制\\制造业}}
+ & \multicolumn{1}{c}{\makecell[c]{控制中国进口\\与离岸外包}} \\
+ & (1) & (2) & (3) \\
+\midrule
+\multicolumn{4}{l}{\textit{自动化技术的代理：}} \\
+机器人渗透率（调整值，1993--2014） & -1.404 & -0.985 & -1.129 \\
+ & (0.377) & (0.369) & (0.362) \\
+样本量 & 61 & 61 & 61 \\
+$R^{2}$ & 0.18 & 0.21 & 0.27 \\
+\addlinespace[4pt]
+行业例行任务占比（1990） & -0.394 & -0.241 & -0.321 \\
+ & (0.122) & (0.159) & (0.164) \\
+样本量 & 61 & 61 & 61 \\
+$R^{2}$ & 0.14 & 0.19 & 0.27 \\
+\addlinespace[4pt]
+使用自动化技术的企业占比（1988--1993，SMT） & -0.390 &  & -0.397 \\
+ & (0.165) &  & (0.166) \\
+样本量 & 148 &  & 148 \\
+$R^{2}$ & 0.08 &  & 0.09 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\end{document}
+
+
+
+
+
